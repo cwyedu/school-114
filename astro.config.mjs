@@ -7,13 +7,42 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '揚揚教學網--114學年',
+			pagination: false,
 			sidebar: [
 				{
-      label: '軟體應用檢定',
-      collapsed: true,
-      autogenerate: {
-        directory: '/cert/'
-      }
+					label: '資訊科技',
+					collapsed: true,
+					autogenerate: {
+						directory: '/it/'
+					}
+				},
+				{
+					label: '電腦遊戲製作',
+					collapsed: true,
+					autogenerate: {
+						directory: '/game-dev/'
+					}
+				},
+				{
+					label: '互動多媒體',
+					collapsed: true,
+					autogenerate: {
+						directory: '/im/'
+					}
+				},
+				{
+					label: 'AI帶你玩程式',
+					collapsed: true,
+					autogenerate: {
+						directory: '/turtle-trip'
+					}
+				},
+				{
+					label: '軟體應用檢定',
+					collapsed: true,
+					autogenerate: {
+						directory: '/cert'
+					}
 				},
 			],
 		}),
