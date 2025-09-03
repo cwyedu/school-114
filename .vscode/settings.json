@@ -1,0 +1,29 @@
+{
+  // 全域：預設 2 格（其他檔案不影響）
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // Markdown 專屬：4 格
+  "[markdown]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  },
+
+  // MDX 專屬：4 格
+  "[mdx]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  },
+
+  // Python 專屬：4 格
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+
+  "editor.formatOnSave": true
+}

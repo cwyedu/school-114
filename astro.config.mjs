@@ -44,6 +44,15 @@ export default defineConfig({
 						directory: '/cert'
 					}
 				},
+				{
+					label: '其它',
+					collapsed: true,
+					items: [
+						{ label: '均質化', link: '/misc/gamebit/gamebit' },
+						{ label: '自己錄首歌', link: '/misc/recording' },
+					],
+
+				},
 			],
 		}),
 	],
