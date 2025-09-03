@@ -24,7 +24,7 @@ export default defineConfig({
 					}
 				},
 				{
-					label: '互動多媒體',
+					label: '互動多媒體實務',
 					collapsed: true,
 					autogenerate: {
 						directory: '/im/'
@@ -48,6 +48,7 @@ export default defineConfig({
 					label: '其它',
 					collapsed: true,
 					items: [
+						{ label: '問 ChatGPT', link: '/misc/chatgpt-usage' },
 						{ label: '均質化', link: '/misc/gamebit/gamebit' },
 						{ label: '自己錄首歌', link: '/misc/recording' },
 					],
