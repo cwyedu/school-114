@@ -1,0 +1,80 @@
+---
+title: 用像素畫出你的遊戲世界
+sidebar:
+  label: 用像素畫出你的遊戲世界
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 1
+---
+
+## 1. 認識像素圖（Bit Art）
+
+[PixelArt 像素風工具分享，教學與網頁設計作品一次看 | 夏木樂網頁設計](https://simular.co/blog/post/pixelart-tools-games-and-resources#heading-pixel-art)
+
+### 什麼是像素（Pixel）？
+
+→ 顯示器上的最小單位，用小格子拼出來的圖。
+
+### Bit Art / Pixel Art 的特色
+
+→ 解析度低，但能用簡單的顏色表現角色、物件和背景。
+
+### 遊戲中的應用
+
+→ 角色（sprites）、道具、背景。
+
+---
+
+## 2. MakeCode Arcade 中的圖像編輯器
+
+- 開啟 **sprite 的 image 編輯器**
+- 工具介紹：筆刷、橡皮擦、填色桶、取色。
+- 認識顏色表（MakeCode Arcade 提供 15 色）。
+- [Pixel It - Create pixel art from an image](https://giventofly.github.io/pixelit/#tryit)
+- [pxt-editor-extension-sample](https://riknoll.github.io/pxt-arcade-asset-tool/)
+
+---
+
+## 3. 畫角色（Sprite）
+
+- **示範**：畫一個主角（小人 / 動物 / 怪物）
+- **學生練習**：設計自己的角色  
+  → 建議：角色要小（16x16 或 32x32 格子），這樣才容易看得清楚。
+
+---
+
+## 4. 畫背景（Background）
+
+### 背景編輯器 vs. Sprite 編輯器差異
+
+- 背景可以整張圖當地圖（160x120）。
+- Sprite 則是會移動的小角色。
+
+### 練習
+
+幫自己的遊戲畫一個背景  
+→ 例如草地、天空、城市、迷宮。
+
+---
+
+## 5. 小遊戲：角色跑在自己設計的場景中
+
+1. 建立一個角色 sprite。
+2. 設定背景為自己畫的圖。
+3. 用方向鍵控制角色移動。
+4. **成果展示**：每位同學秀出自己「主角 + 背景」的作品。
+
+---
+
+## 6. 延伸挑戰
+
+- 給角色加一個道具 sprite（例如：星星、寶物）。
+- 試著用動畫（多張 sprite 圖片連續播放）。
+
+在 MakeCode Arcade 中有兩種方法：
+
+- 自己用迴圈切換圖片
+  👉 優點：不用額外安裝套件，概念簡單。
+  👉 缺點：程式碼較多，控制比較麻煩。
+- 使用 Animation 擴充功能
+  👉 優點：功能完整，可以同時處理上下左右的動畫。
+  👉 缺點：需要額外安裝 animation 擴充功能。

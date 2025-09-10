@@ -16,6 +16,12 @@ sidebar:
 3. 可能有很多方法，目前，我們先選擇用網頁的模式
 4. 如果 AI 給了你程式碼，但是你根本看不懂，不知道怎麼做時，就問它吧
 
+現在不是只有問 AI 得到做法和程式就好，而是要把這些東西實作出來。這裡會用到的工具：
+
+- [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
+- 你應該要新增一個資料夾，再用 VSCode 打開
+- 最好裝個 Live Server 延伸模組
+
 ## 改進
 
 1. 可不可以很多歌
