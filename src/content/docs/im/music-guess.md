@@ -22,6 +22,12 @@ sidebar:
 - 你應該要新增一個資料夾，再用 VSCode 打開
 - 最好裝個 Live Server 延伸模組
 
+## 下載歌曲
+
+- 可以用 yt-dlp
+- 使用方法 [自己錄首歌](../misc/recording)
+- 要存成 mp3，可能會有錯誤，需要去下載 ffmpeg
+
 ## 改進
 
 1. 可不可以很多歌
