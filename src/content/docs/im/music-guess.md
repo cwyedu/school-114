@@ -25,7 +25,7 @@ sidebar:
 ## 下載歌曲
 
 - 可以用 yt-dlp
-- 使用方法 [自己錄首歌](../misc/recording)
+- 使用方法 [自己錄首歌](/misc/recording)
 - 要存成 mp3，可能會有錯誤，需要去下載 ffmpeg
 
 ## 改進
