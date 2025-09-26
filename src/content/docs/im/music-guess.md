@@ -57,6 +57,12 @@ sidebar:
 | **進階功能（可選）** | 多輪模式、排行榜、提示系統、音效或動畫效果等                                                                         |
 | **其他補充**         | - 遊戲裝置（手機/電腦）<br>- 瀏覽器需求<br>- 額外要求（教育用途、可修改歌曲清單）                                    |
 
+有了規格，就用這個規格，請 **Lyra** 幫忙產生提示詞，可以將提示詞給，順便看看哪一個產生的程式比較完善，比較符合規格
+
+- [ChatGPT](https://chatgpt.com/)
+- [Claude](https://claude.ai/new)
+- [Google Gemini](https://gemini.google.com/app?hl=zh-TW)
+
 ## 放到網路上
 
 1. 有哪些地方可以放？
