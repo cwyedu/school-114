@@ -1,6 +1,9 @@
 // @ts-check
+// https://www.fzeba.com/posts/7_latex-in-astro/ 加入 latex 支援
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
@@ -55,6 +58,19 @@ export default defineConfig({
 
 				},
 			],
+			head: [
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'stylesheet',
+						href: 'https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css',
+					},
+				},
+			],
 		}),
 	],
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex],
+	},
 });
