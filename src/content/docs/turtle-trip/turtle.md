@@ -65,7 +65,7 @@ sidebar:
 
 從上一個例子發現有些動作很煩，一直有重複的動作，一直需要複製貼上同一段程式碼，在 python 中有沒有表示重複的陳述 (statement)？你可以用 `for` 迴圈、`while` 迴圈。我們就來看一下迴圈到底怎麼用。
 
-```python!=
+```python
 for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
     print(i)
 
@@ -87,7 +87,7 @@ for i in range(10):
 
 ![](https://i.imgur.com/sJvqMzg.gif)
 
-```python!=
+```python
 def triangle(t, size):
     t.forward(size)
     t.left(120)
@@ -130,7 +130,7 @@ def triangle(t, size):
 
 ![](https://i.imgur.com/i7rA4rH.gif)
 
-```python!
+```python
 if i > 5:
     print("條件判斷")
 ```
@@ -175,7 +175,7 @@ if i > 5:
 - 你能觀察每個四邊形的座標 (x, y)，的關係嗎？
 - 這裡有用到 `random` 這個工具箱
 
-```python=
+```python
 import random
 
 print(random.randint(1, 100))
