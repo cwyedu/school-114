@@ -1,0 +1,43 @@
+---
+const { title = "內容" } = Astro.props;
+---
+
+<style>
+details.collapsible {
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+}
+
+details.collapsible summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.6em 1em;
+  list-style: none;
+  user-select: none;
+}
+
+details.collapsible summary::marker {
+  display: none;
+}
+
+details.collapsible[open] {
+  background-color: #fff;
+  border-color: #888;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+details.collapsible > div {
+  padding: 0.8em 1.2em 1em;
+  border-top: 1px solid #ddd;
+}
+</style>
+
+<details class="collapsible">
+  <summary>{title}</summary>
+  <div>
+    <slot />
+  </div>
+</details>
