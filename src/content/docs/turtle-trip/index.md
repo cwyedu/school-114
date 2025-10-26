@@ -16,3 +16,12 @@ sidebar:
 6. 有趣的圖
 7. 網頁：換個口味，我想做一個猜歌遊戲
 
+---
+
+### 整理一下
+
+今天我想畫
+![](https://i.imgur.com/sJvqMzg.gif)
+
+1. 這是一張 gif 圖，我看不清楚，怎麼辦？ [gif 慢一點](https://chatgpt.com/share/68fe4076-4a98-8005-9f13-8c6138990517)
+2. 想一想，要如何問 ChatGPT？ [ChatGPT 畫花瓣](https://chatgpt.com/share/68fe40be-fa24-8005-90ef-302d5f2641af)
