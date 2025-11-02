@@ -25,3 +25,27 @@ sidebar:
 
 1. 這是一張 gif 圖，我看不清楚，怎麼辦？ [gif 慢一點](https://chatgpt.com/share/68fe4076-4a98-8005-9f13-8c6138990517)
 2. 想一想，要如何問 ChatGPT？ [ChatGPT 畫花瓣](https://chatgpt.com/share/68fe40be-fa24-8005-90ef-302d5f2641af)
+
+
+### 最後一次
+
+[二林工商114-1彈性學習時間-學生回饋單](https://docs.google.com/forms/d/e/1FAIpQLSd-dHwLKXEC8BxlGIHsqBQ6UlB1tqqk6Z6wt12K4KSOmdhuOg/viewform?pli=1)
+
+
+今天來畫 60 個圓
+
+![](https://i.imgur.com/8FD9PTd.gif)
+
+```
+你是一位精通 Python Turtle 模組的專家級程式設計師。你的任務是編寫一段完整的、可直接運行的 Python 程式碼，以繪製一個具備彩虹顏色漸層的圖形。
+
+**繪圖要求 (Constraints):**
+1.  **結構:** 必須從中心點繪製 **60 個**完全相同的圓形。
+2.  **角度:** 每次繪製完畢後，畫筆必須向右轉動 $360/60 = 6$ 度，以確保 60 個圓恰好環繞一圈。
+3.  **顏色漸層:** 必須實現平滑的彩虹顏色漸層效果。使用 `turtle.colormode(1.0)` 或 `turtle.colormode(255)`，並利用 **HSV 顏色模型**（Hue, Saturation, Value）中的 H（色相）值在迴圈中均勻變化（從 $0$ 到 $1$）來控制顏色。
+4.  **大小:** 所有圓的半徑必須是**相同**的（設定為 80 像素）。
+5.  **動畫展示:** 為了讓使用者清楚看到繪製過程，請將畫筆速度設定為 **中等速度**（例如 `turtle.speed(8)` 或 `turtle.speed(5)`）。**禁止使用** `turtle.tracer(False)` 和 `turtle.update()`。繪製完成後，使用 `turtle.done()`。
+
+**輸出格式:**
+只輸出最終的 Python 程式碼，不包含任何解釋或額外說明。
+```
