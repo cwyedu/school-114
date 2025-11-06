@@ -4,7 +4,7 @@ sidebar:
   # Set a custom label for the link
   label: Line 貼圖
   # Set a custom order for the link (lower numbers are displayed higher up)
-  order: 2
+  order: 3
 ---
 
 參考影片：
