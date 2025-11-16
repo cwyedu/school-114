@@ -7,6 +7,8 @@ sidebar:
   order: 3
 ---
 
+不錯的教學：[Github Desktop 新手入門教學 —— 用漂亮的 GUI 介面來學習 Git 基本觀念](https://codelove.tw/@howtomakeaturn/course/yawb3R)
+
 # 💻 零基礎上手！使用 GitHub Desktop + GitHub Pages 發布您的第一個網站
 
 這份教學內容是用下列提示詞產出
