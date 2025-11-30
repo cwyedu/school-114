@@ -1,0 +1,61 @@
+---
+title: 網頁展示
+sidebar:
+  label: 網頁展示
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 5
+---
+import Collapsible from '/src/components/Collapsible.astro';
+
+在這一單元，我們將學習如何將你所製作的遊戲上傳到網頁上，讓更多人能夠體驗你的創作。[範例網頁](https://cwyedu.github.io/funs/game-dev-curate/)
+
+## 請 AI 幫你製作網頁
+
+你可以使用 AI 工具來幫助你製作一個簡單的網頁。以下是我的範例提示，你可以根據這個範例來調整，讓 AI 幫你產生符合你需求的程式碼。
+
+<Collapsible title="咒語">
+
+**角色：** 擔任資深網頁設計師及前端開發人員，專精於 8-bit/像素藝術美學，同時也是教育科技專案的內容策略專家。
+
+**目標：** 產生一個包含兩頁式網站的完整、響應式 HTML 和 CSS 程式碼，用於介紹一個使用 MakeCode Arcade/Game:Bit 製作的「電腦遊戲製作」課程專題。設計必須嚴格遵循統一且功能性的**像素藝術/復古遊戲風格**。
+
+**輸出規格：**
+1.  **檔案結構：** 提供三個完整檔案的程式碼：`index.html` (主頁)、`style.css` (共享樣式)，以及 `game_template.html` (分頁範本)。
+2.  **HTML 結構 ( `index.html` )：**
+    * 標頭：標題清晰說明「電腦遊戲製作課程專題 - MakeCode Arcade/Game:Bit」。
+    * 主內容：簡短的介紹段落。
+    * 遊戲列表 (區塊)：清晰風格化的三款遊戲列表，附帶可點擊的連結。
+        * 遊戲：1. 瑪利歐吃香菇、2. 隕石危機、3. 太空侵略者。
+        * 連結：每個連結必須指向各自的分頁：`mario.html`、`asteroid.html`、`invaders.html`。
+3.  **HTML 結構 ( 遊戲分頁範本 - 例如：`game_template.html` )：**
+    * 範本要求：生成一個完整的 HTML 檔案範本，該範本可輕鬆複製並用於另外兩款遊戲。
+    * 內容：
+        * 遊戲標題。
+        * 該遊戲的介紹段落（例如，描述遊戲目標）。
+        * 規格表格：根據使用者提供的範例結構，清晰呈現遊戲細節的表格（遊戲名稱、類型、平台、角色、目標、基本玩法、難度提升、額外挑戰）。
+        * 遊戲嵌入區塊：包含使用者提供的 `iframe` 結構，但 `src` 屬性必須設定為一個通用的**佔位符 URL**（例如：`https://arcade.makecode.com/---placeholder-mario`）。
+4.  **CSS 樣式 ( `style.css` )：**
+    * 美學：實作一致的**像素藝術/復古主題**。使用像素字體（例如：提供免費且網路安全的像素字體連結，或使用單行間距的備用字體如 'Courier New'），大膽的塊狀顏色（例如：黑色、白色、8-bit 色板顏色），以及模擬舊式 CRT 螢幕或街機的盒陰影/邊框效果。
+    * 統一性：樣式必須在主頁和分頁範本之間保持統一。
+    * 響應性：確保佈局在桌機和手機螢幕上均可正常顯示。
+
+**限制條件（遊戲資料）：**
+* **瑪利歐吃香菇：** 創建合適的佔位符文本和規格表格條目。
+* **隕石危機：** 創建合適的佔位符文本和規格表格條目。
+* **太空侵略者：** 使用使用者提供的範例規格。
+* **iFrame：** 使用使用者提供的 `iframe` HTML 結構，但將 `src` URL 替換為一個簡單、清晰的佔位符（例如：`https://arcade.makecode.com/---placeholder-game-id`）。
+
+</Collapsible>
+
+如果你上課夠認真，就直接用 [Visual Studio Code](https://code.visualstudio.com/) 把這些檔案建立起來，然後把你的遊戲放進去吧！
+
+什麼？不會。你可以直接問 AI 說怎麼在自己的電腦上建立這些檔案，AI 會一步步帶你完成的！
+
+
+---
+
+## 上傳到 GitHub Pages
+
+接下來，我們要把這些檔案上傳到 GitHub，並使用 GitHub Pages 來發布你的網頁。請參考以下步驟：
+
+[零基礎上手！使用 GitHub Desktop + GitHub Pages 發布您的第一個網站](/misc/github-pages)
