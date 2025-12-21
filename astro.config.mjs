@@ -54,7 +54,7 @@ export default defineConfig({
 						{ label: '問 ChatGPT', link: '/misc/chatgpt-usage' },
 						{ label: '均質化', link: '/misc/gamebit/gamebit' },
 						{ label: '自己錄首歌', link: '/misc/recording' },
-						{ label: '用 Visual Studio Code 寫網頁', link: '/misc/vscode-web' },
+						{ label: '用 VS Code 寫網頁', link: '/misc/vscode-web' },
 					],
 
 				},
