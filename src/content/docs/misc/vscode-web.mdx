@@ -1,0 +1,106 @@
+---
+title: 用 Visual Studio Code 寫網頁
+sidebar:
+  # Set a custom label for the link
+  label: 精準使用 ChatGPT 教學指南
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 4
+---
+import Collapsible from '/src/components/Collapsible.astro';
+
+
+
+## 使用 VS Code
+
+### 安裝 Extension（擴充套件）
+
+1. 下載安裝 [Visual Studio Code](https://code.visualstudio.com/)
+1. 開啟
+2. 點擊左側【Extensions（擴充套件）】圖示。
+3. 在搜尋欄輸入 `Chinese`。
+4. 點擊 **Chinese (Traditional) Language Pack for Visual Studio Code** →【Install】。
+5. 依提示重新整理或重新載入 VS Code。
+6. 在搜尋欄輸入 `Live Server`。
+7. 點擊作者為 **Ritwick Dey** 的 Live Server →【Install】。
+8. 安裝完成後，在 HTML 檔案上按右鍵，確認出現【Open with Live Server】。
+
+## 網頁的基本組成
+
+一般的網頁通常由以下三種檔案組成：
+
+1. **HTML**： 負責網頁的基本結構與內容（例如：文字、圖片、按鈕）。
+2. **CSS**： 負責網頁的外觀與樣式（例如：顏色、字型、版面配置）。
+3. **JavaScript**： 負責網頁的互動與功能（例如：按鈕點擊、動態效果）。
+
+## 建立一個範例網頁
+
+### 使用 AI 產生程式碼（Vibe Coding）
+
+需產生 3 個檔案：`index.html`、`style.css`、`script.js`。
+
+<Collapsible title="簡單的範例網">
+```
+# 角色設定
+你是一位資深前端開發工程師與 UI 設計師，擅長打造具備「專業時尚感」與「極簡主義」的現代個人網站。
+
+# 任務目標
+請為我開發一個自我介紹網頁。你的目標是提供完整、可直接運行的程式碼。請提供以下三個檔案：
+1. `index.html`: 包含 Hero 區塊（標題）、關於我、專業技能清單、聯絡方式。
+2. `style.css`: 採用現代時尚風格（建議深色背景搭配細緻的金色或電光藍點綴），使用 Flexbox/Grid 佈局，確保手機與電腦皆能完美顯示（RWD）。
+3. `script.js`: 加入簡單的互動效果，例如捲動時元素優雅淡入。
+
+# 風格限制
+- 字體：使用現代無襯線體（如 Inter, Roboto）。
+- 設計感：高對比度、充足的留白、細膩的邊框與陰影。
+- 連結性：請確保 HTML 檔案中已正確引用 `style.css` 與 `script.js`。
+
+# 輸出格式（重要）
+- 請以「純文字代碼塊」形式分別提供三個檔案。
+- 減少不必要的文字說明，優先呈現程式碼內容，方便我直接複製使用。
+```
+</Collapsible>
+
+
+<Collapsible title="馬卡龍色調的治癒系心情追蹤器">
+```
+# 角色：資深前端工程師與創意 UI 設計師
+
+# 目標：
+開發一個「今日心情追蹤（Daily Mood Tracker）」網頁小工具。視覺風格必須採用「繽紛馬卡龍色調（Macaron Color Palette）」，整體感受要像可愛、治癒的日系數位文具。
+
+# 視覺與 UI 要求（馬卡龍美學）：
+1. **配色方案**：使用 CSS 變數定義柔和的色調。
+   - 背景：極淺奶油色或淡紫色。
+   - 點綴色：櫻花粉 (#FFB7B2)、薄荷綠 (#B2F2BB)、檸檬黃 (#FFFFD1)、粉橘色 (#FFDAC1)。
+2. **UI 設計**：
+   - 圓潤轉角：容器與按鈕使用較大的圓角（border-radius: 20px+），營造親和力。
+   - 軟陰影 (Soft Shadows)：使用淡淡的陰影效果，讓組件看起來像漂浮在紙面上。
+   - 動態回饋：按鈕在滑鼠懸停 (Hover) 和點擊 (Click) 時要有「彈跳感」的縮放動畫。
+3. **字體**：選用圓潤、乾淨的無襯線字體。
+
+# 功能規格：
+1. **心情選擇**：提供 5 個代表不同心情的互動卡片（如：棒極了、還不錯、普通、不太好、糟透了），搭配對應的 Emoji。
+2. **心情筆記**：一個簡單的文字輸入框，標題為「今日小記」，讓使用者寫下一句短語。
+3. **數據持久化**：使用 `localStorage` 儲存心情、筆記與日期，確保重新整理頁面後資料不會消失。
+4. **歷史紀錄**：下方顯示一個簡潔的列表，展示最近 7 天的心情紀錄。
+
+# 技術輸出要求：
+請提供乾淨、可讀性高的代碼：
+- `index.html`: 語義化的 HTML5 結構。
+- `style.css`: 包含 Flexbox/Grid 佈局與馬卡龍主題變數。
+- `script.js`: 原生 JavaScript (Vanilla JS)，處理資料儲存與 DOM 更新。
+```
+</Collapsible>
+
+
+
+### 使用 VS Code 建立專案與檔案
+
+1. 在 VS Code 中建立一個新的資料夾，命名為 `myWeb`。
+5. 在 `myWeb` 資料夾中建立三個檔案：
+   * `index.html`
+   * `style.css`
+   * `script.js`
+6. 將 AI 產生的程式碼，分別複製並貼到對應的檔案中。
+7. 儲存所有檔案。
+1. 預覽網頁：在index.html` 上按右鍵，選擇【Open with Live Server】進行預覽。
