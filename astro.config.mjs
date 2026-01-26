@@ -4,6 +4,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import starlightClientMermaid from '@pasqal-io/starlight-client-mermaid';
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,26 +13,27 @@ export default defineConfig({
 		starlight({
 			title: '揚揚教學網--114學年',
 			pagination: false,
+			plugins: [starlightClientMermaid()],
 			sidebar: [
 				{
 					label: '資訊科技',
 					collapsed: true,
 					autogenerate: {
-						directory: '/it/'
+						directory: '/it'
 					}
 				},
 				{
 					label: '電腦遊戲製作',
 					collapsed: true,
 					autogenerate: {
-						directory: '/game-dev/'
+						directory: '/game-dev'
 					}
 				},
 				{
 					label: '互動多媒體實務',
 					collapsed: true,
 					autogenerate: {
-						directory: '/im/'
+						directory: '/im'
 					}
 				},
 				{
@@ -45,6 +48,13 @@ export default defineConfig({
 					collapsed: true,
 					autogenerate: {
 						directory: '/cert'
+					}
+				},
+				{
+					label: '練功房',
+					collapsed: true,
+					autogenerate: {
+						directory: '/dojo'
 					}
 				},
 				{
