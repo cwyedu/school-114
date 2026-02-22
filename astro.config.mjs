@@ -37,6 +37,13 @@ export default defineConfig({
 					}
 				},
 				{
+					label: '數位科技應用',
+					collapsed: true,
+					autogenerate: {
+						directory: '/digital-applications'
+					}
+				},				
+				{
 					label: 'AI帶你玩程式',
 					collapsed: true,
 					autogenerate: {
