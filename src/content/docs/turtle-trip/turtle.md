@@ -3,7 +3,7 @@ title: 小烏龜的程式旅程
 sidebar:
   label: 小烏龜的程式旅程
   # Set a custom order for the link (lower numbers are displayed higher up)
-  order: 1
+  order: 2
 ---
 
 每 12 年，在兔年，小烏龜就想一血前恥，心想透過電腦的幫忙，一定可以幹掉小白兔（嗯…小烏龜不是本來就贏，是要一血什麼？就是被說速度慢還可以贏嘛），於是有了這個程式之旅：一步一腳印，凡走過必留下痕跡！
