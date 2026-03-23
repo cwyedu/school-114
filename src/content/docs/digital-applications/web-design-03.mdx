@@ -1,0 +1,324 @@
+---
+title: Lab2：自我介紹頁面
+sidebar:
+  hidden: true
+---
+
+🌐 網頁開發第 3 週：about.html（HTML 基礎）
+
+---
+
+## 🎯 本週學習目標
+
+本週重點是建立你的第一個「個人介紹頁」，並理解 HTML 基礎結構：
+
+1. 認識 **HTML 基本架構（head / body）**
+2. 學會使用 **標題與段落標籤（h1, h2, p）**
+3. 了解 **換行與分隔（br / hr）**
+4. 建立 **lab2/index.html 個人介紹頁**
+5. 學會 **網頁之間的連結（a 標籤）**
+
+👉 核心能力：**看得懂 HTML 結構，而不是死背語法**
+
+---
+
+## 🧩 一、完整範例程式碼
+
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8"> <!-- 設定網頁編碼，避免中文亂碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 讓手機也能正常顯示 -->
+    <title>關於我</title> <!-- 瀏覽器分頁上顯示的標題 -->
+</head>
+<body>
+    <!-- 主標題：我的名字 -->
+    <h1>王小明</h1>
+
+    <!-- 副標題：我的專長 -->
+    <h2>我的專長：寫程式、攝影、籃球</h2>
+
+    <!-- 自我介紹段落 -->
+    <p>
+        我是一位熱愛學習的學生，喜歡透過程式解決問題，也享受用相機記錄生活。
+    </p>
+
+    <!-- 分隔線 -->
+    <hr>
+
+    <!-- 聯絡資訊 -->
+    <p>
+        Email: example@email.com<br>
+        電話: 0912-345-678
+    </p>
+
+    <hr>
+
+    <!-- 回首頁 -->
+    <a href="index.html">回到首頁</a>
+</body>
+</html>
+```
+
+---
+
+## 🧠 二、HTML 基本觀念
+
+### 1️⃣ head vs body（超重要🔥）
+
+HTML 可以想成一間房子：
+
+- `<head>` 👉 設定（看不到）
+- `<body>` 👉 畫面（看得到）
+
+📌 記住：
+👉 **head = 設定，body = 畫面**
+
+---
+
+### 2️⃣ 標籤的成雙成對
+
+```html
+<p>這是一段文字</p>
+```
+
+- `<p>` 開始
+- `</p>` 結束
+
+👉 像一個盒子
+
+---
+
+### 🔸 單一標籤（例外）
+
+```html
+<br>
+<hr>
+```
+
+👉 功能：
+
+- br → 換行
+- hr → 分隔線
+
+---
+
+### 3️⃣ 階層觀念
+
+```
+h1 → 最大標題
+h2 → 次標題
+p  → 內容
+```
+
+👉 就像寫文章
+
+---
+
+## 🏗 三、建立 lab2/index.html
+
+### Step 1：建立檔案
+
+```
+lab2/index.html
+```
+
+---
+
+### Step 2：加入基本結構
+
+放入 HTML 骨架
+
+---
+
+### Step 3：加入內容
+
+需要包含：
+
+- 名字（h1）
+- 專長（h2）
+- 自我介紹（p）
+- 聯絡資訊
+
+---
+
+### Step 4：加入分隔
+
+使用：
+
+- `<hr>` 分區
+- `<br>` 換行
+
+---
+
+### Step 5：加入回首頁
+
+```html
+<a href="index.html">回到首頁</a>
+```
+
+---
+
+## 🔗 四、連結觀念（a 標籤）
+
+```html
+<a href="index.html">回到首頁</a>
+```
+
+📌 重點：
+
+- href = 目標位置
+- index.html = 首頁 
+
+:::danger[注意]
+上面的連結是連不到首頁的。
+
+**需要特別注意路徑！**
+:::
+
+
+---
+
+## 🧪 五、測試網頁
+
+開啟 lab2/index.html，確認：
+
+- 網頁正常顯示
+- 有標題與內容
+- 可以回首頁
+
+---
+
+## ⚠️ 六、常見錯誤
+
+### ❌ 中文亂碼
+
+👉 忘記：
+
+```html
+<meta charset="UTF-8">
+```
+
+---
+
+### ❌ 連結錯誤
+
+👉 href 路徑錯
+
+---
+
+### ❌ 標籤沒關
+
+```html
+<p>內容
+```
+
+👉 少了 `</p>`
+
+---
+
+## 🎯 本週重點總結
+
+請記住三件事：
+
+1. HTML 有 head / body
+2. 標籤有開始與結束
+3. h1 → h2 → p 有階層
+
+---
+
+## 🚀 小練習
+
+請完成：
+
+1. 改成自己的名字
+2. 修改三個專長
+3. 寫一段自我介紹（30～50 字）
+4. 加一個聯絡方式
+
+---
+
+完成後，你就有自己的個人頁面了 🎉
+
+## 🎨 七、加入 style.css 美化（不修改 HTML）
+
+請建立一個新檔案：
+
+```
+lab2/style.css
+```
+
+並加入以下內容：
+
+```css
+/* 整體頁面設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 主標題 */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* 副標題 */
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* 段落 */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 分隔線 */
+hr {
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid #ddd;
+}
+
+/* 連結按鈕 */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 滑鼠移上效果 */
+a:hover {
+    background-color: #2980b9;
+}
+```
+
+---
+
+### 📌 重要提醒
+
+因為我們「沒有修改 HTML」，所以需要手動在 HTML 加上：
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+👉 放在 `<head>` 裡面
+
+---
+
+### 🎯 學習重點
+
+- HTML 負責「內容」
+- CSS 負責「外觀」
+- 分開寫比較專業 👍
