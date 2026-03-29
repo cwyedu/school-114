@@ -1,0 +1,278 @@
+---
+title: Lab3：圖片與超連結頁面
+sidebar:
+  hidden: true
+---
+
+# 🌐 Lab3：圖片與超連結頁面
+
+---
+
+## 🎯 本次學習目標
+
+本次將學習如何在網頁中加入圖片與連結：
+
+1. 學會使用 **圖片標籤（img）**
+2. 了解 **圖片路徑（相對路徑）**
+3. 學會建立 **外部連結與內部連結**
+4. 建立 **lab3/index.html 圖片頁面**
+5. 練習 **HTML + CSS 結合版面**
+
+👉 核心能力：**讓網頁內容更豐富（文字 → 圖片）**
+
+---
+
+## 🧩 一、建立 index.html（引導式）
+
+本次不直接給完整程式碼，請依照提示一步一步完成：
+
+### Step 1：建立基本架構
+
+* 建立 `lab3/index.html`
+* 複製你在 Lab2 使用過的 HTML 基本骨架（DOCTYPE / html / head / body）
+* 輸入 <strong>!</strong>，再按下 Tab 鍵，會自動產生基本架構
+
+---
+
+### Step 2：加入標題
+
+在 `<body>` 中加入：
+
+* 主標題：你的頁面名稱（例如：我的作品）
+* 副標題：例如「攝影作品」
+
+👉 提示：使用 `h1`、`h2`
+
+---
+
+### Step 3：加入圖片
+
+* 去 [ChatGPT](https://chat.openai.com/)、[Gemini](https://gemini.google.com/app) 或其他 AI 助手，請它幫你產生一張圖片（圖中需有你的Q偶），並下載到你的電腦
+* 將圖片放入 `lab3` 資料夾（例如：myQ.jpg）
+* 在網頁中顯示圖片
+
+👉 提示：使用 `img`
+👉 需要設定：
+
+* 圖片位置（src）
+* 說明（alt）
+* 大小（width）
+
+---
+
+### Step 4：加入說明文字
+
+* 在圖片下方加入一段介紹文字
+
+👉 提示：使用 `p`
+
+---
+
+### Step 5：加入分隔
+
+* 在不同區塊之間加入分隔線
+
+👉 提示：使用 `hr`
+
+---
+
+### Step 6：加入外部連結
+
+* 加入一個你喜歡的網站（例如 YouTube）
+
+👉 提示：
+
+* 使用 `a`
+* 設定 `href`
+* 加上 `target="_blank"`
+
+---
+
+### Step 7：加入回首頁
+
+* 建立回首頁的連結
+
+👉 提示：
+
+* 使用 `a`
+* 路徑為 `../index.html`
+
+---
+
+完成以上步驟，你就會完成自己的 lab3/index.html 🎉
+
+---
+
+## 🧠 二、HTML 新觀念
+
+### 1️⃣ 圖片標籤（img）
+
+```html
+<img src="photo.jpg" alt="描述" width="300">
+```
+
+📌 重點：
+
+* src → 圖片位置
+* alt → 圖片說明（很重要）
+* width → 圖片大小
+
+---
+
+### 2️⃣ 路徑觀念（超重要🔥）
+
+假設資料結構：
+
+```
+lab3/index.html
+lab3/photo.jpg
+```
+
+👉 同一層：
+
+```
+src="photo.jpg"
+```
+
+👉 回上一層：
+
+```
+../index.html
+```
+
+---
+
+### 3️⃣ 外部連結
+
+```html
+<a href="https://google.com" target="_blank">Google</a>
+```
+
+📌 重點：
+
+* href → 連結位置
+* target="_blank" → 新分頁開啟
+
+---
+
+## 🧪 三、測試網頁
+
+請確認：
+
+* 圖片有正常顯示
+* 連結可以點擊
+* 可以成功回到首頁
+
+---
+
+## ⚠️ 四、常見錯誤
+
+### ❌ 圖片顯示不出來
+
+👉 檢查：
+
+* 檔名是否正確
+* 副檔名（jpg / png）
+
+---
+
+### ❌ 路徑錯誤
+
+👉 常見錯誤：
+
+```html
+src="/photo.jpg"
+```
+
+---
+
+### ❌ 連結錯誤
+
+👉 檢查：
+
+* href 路徑
+* ../ 是否正確
+
+---
+
+## 🎯 本次重點總結
+
+請記住三件事：
+
+1. img 用來顯示圖片
+2. 路徑很重要（同層 / 上一層）
+3. a 可以建立任何連結
+
+---
+
+## 🚀 小練習
+
+請完成：
+
+1. 放入一張自己的圖片
+2. 加一個喜歡的網站連結
+3. 調整圖片大小
+4. 成功從 lab3 回首頁
+
+---
+
+完成後，你的網站就有「多媒體內容」了 🎉
+
+---
+
+## 🎨 五、加入 style.css 美化
+
+建立檔案：
+
+```
+lab3/style.css
+```
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+img {
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #1e8449;
+}
+```
+
+---
+
+### 📌 提醒
+
+記得在 HTML 加入：
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+---
+
+### 🎯 學習重點
+
+* 圖片 + 連結 = 真正的網站內容
+* CSS 讓頁面更像作品 👍
