@@ -1,0 +1,436 @@
+---
+title: Lab5：CSS 基礎認識與練習
+sidebar:
+  hidden: true
+---
+
+# 🌐 Lab5：CSS 基礎認識與練習
+
+---
+
+## 🎯 本次學習目標
+
+本次重點是「理解 CSS 是什麼」，並實際操作：
+
+1. 了解 **什麼是 CSS（負責外觀）**
+2. 認識 **CSS 的基本語法（選擇器、屬性、值）**
+3. 理解 **HTML 與 CSS 的分工**
+4. 使用提供的 HTML 練習 CSS
+5. 完成 **至少 3 種樣式變化**
+
+👉 核心能力：**知道 CSS 在做什麼，而不是只會複製貼上**
+
+---
+
+## 🧩 一、什麼是 CSS（重要觀念）
+
+👉 HTML：負責內容（文字、圖片、結構）
+👉 CSS：負責外觀（顏色、大小、排版）
+
+📌 可以這樣想：
+
+* HTML = 骨架
+* CSS = 外觀
+
+---
+
+## 🧩 二、老師提供 HTML（直接使用）
+
+請使用以下 `lab5/index.html`：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 練習頁面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>歡迎來到我的練習頁面</h1>
+
+    <p>
+        這是一個用來學習 CSS 的簡單網頁，我們會練習修改顏色、背景、字體大小與對齊方式。
+    </p>
+
+    <h2>我的興趣</h2>
+    <ul>
+        <li>打球</li>
+        <li>聽音樂</li>
+        <li>看電影</li>
+    </ul>
+
+    <h2>簡單表格（練習 id / class）</h2>
+    <table id="my-table">
+        <tr>
+            <th>名稱</th>
+            <th>類型</th>
+        </tr>
+        <tr class="row1">
+            <td>籃球</td>
+            <td>運動</td>
+        </tr>
+        <tr class="row2">
+            <td>音樂</td>
+            <td>娛樂</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
+
+👉 重點：
+這一週**不要改 HTML**，專心練習 CSS
+
+---
+
+## 🧩 三、建立 style.css（開始控制畫面🔥）
+
+### Step 1：建立檔案
+
+```
+lab5/style.css
+```
+
+---
+
+### Step 2：開始改畫面
+
+現在開始思考：
+
+👉 我要改哪個 HTML？（h1 / p / body / ul）
+
+例如：
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+👉 意思：
+把畫面上的 **h1 變藍色**
+
+---
+
+再試更多：
+
+```css
+body {
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+```
+
+👉 核心概念：
+
+**CSS = 選一個 HTML → 改它的樣子**
+
+---
+
+## 🧠 四、CSS 基本語法
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+📌 結構說明：
+
+* h1 → 選擇器（選到誰）
+* color → 屬性
+* blue → 值
+
+---
+
+## 🎨 五、基本樣式練習
+
+請至少完成以下 3 種：
+
+### 1️⃣ 改變文字顏色
+
+```css
+h1 {
+  color: #2c3e50;
+}
+```
+
+---
+
+### 2️⃣ 改變背景顏色
+
+```css
+body {
+  background-color: #f5f7fa;
+}
+```
+
+---
+
+### 3️⃣ 改變文字大小
+
+```css
+p {
+  font-size: 18px;
+}
+```
+
+---
+
+### 4️⃣ 文字置中
+
+```css
+body {
+  text-align: center;
+}
+```
+
+---
+
+👉 至少完成 3 種
+
+---
+
+## 🧪 六、測試網頁（Live Server）
+
+### Step 1：安裝
+
+VS Code → Extensions → 搜尋：
+
+```
+Live Server
+```
+
+---
+
+### Step 2：啟動
+
+右鍵 `index.html` →
+
+```
+Open with Live Server
+```
+
+---
+
+### Step 3：效果
+
+* 修改 CSS → 自動更新
+* 不用一直按 F5 🚀
+
+---
+
+請確認：
+
+* CSS 有成功套用
+* 畫面有變化
+
+---
+
+## ⚠️ 七、常見錯誤
+
+### ❌ CSS 沒有效果
+
+👉 檢查：
+
+* 是否有 `<link>`
+* 檔名是否正確
+
+---
+
+### ❌ 拼字錯誤
+
+```css
+colr: red;
+```
+
+---
+
+### ❌ 忘記分號
+
+```css
+color: red
+```
+
+---
+
+## 🎯 八、本次重點總結
+
+請記住三件事：
+
+1. CSS = 外觀
+2. HTML = 結構
+3. CSS = 選擇器 + 屬性 + 值
+
+---
+
+## 🚀 九、加入一系列的美化這個 HTML 檔
+
+請不要改 `index.html`，只修改 `style.css`，依照下面順序一步一步美化畫面。
+
+---
+
+### Step 1：先美化整個頁面
+
+先選到 `body`，讓整體畫面不要太單調：
+
+* 加入背景顏色
+* 設定字體
+* 讓內容置中
+* 加入內距（padding）
+
+例如：
+
+```css
+body {
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+```
+
+---
+
+### Step 2：美化主標題
+
+再選到 `h1`，讓標題更明顯：
+
+* 修改文字顏色
+* 放大字體
+
+例如：
+
+```css
+h1 {
+  color: #2c3e50;
+  font-size: 32px;
+}
+```
+
+---
+
+### Step 3：美化段落文字
+
+再選到 `p`，讓內文更容易閱讀：
+
+* 調整文字大小
+* 改變文字顏色
+
+例如：
+
+```css
+p {
+  font-size: 18px;
+  color: #555;
+}
+```
+
+---
+
+### Step 4：美化清單
+
+再選到 `ul`，讓興趣清單更整齊：
+
+* 讓清單不要太靠左
+* 調整對齊方式
+
+例如：
+
+```css
+ul {
+  display: inline-block;
+  text-align: left;
+}
+```
+
+---
+
+### Step 5：美化表格
+
+再選到 `table`、`th`、`td`，讓表格更清楚：
+
+* 表格置中
+* 加上框線
+* 加入內距
+* 幫標題列加底色
+
+例如：
+
+```css
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+```
+
+---
+
+### Step 6：練習 id 與 class
+
+這個 HTML 裡有：
+
+* `id="my-table"`
+* `class="row1"`
+* `class="row2"`
+
+你可以試著分別改它們的樣式：
+
+```css
+#my-table {
+  background-color: white;
+}
+
+.row1 {
+  background-color: #f9f9f9;
+}
+
+.row2 {
+  background-color: #eef6ff;
+}
+```
+
+---
+
+### Step 7：完成至少 3 種以上變化
+
+請至少完成下面其中 3 種：
+
+1. 改背景顏色
+2. 改標題顏色
+3. 改文字大小
+4. 讓內容置中
+5. 美化表格
+6. 練習 id / class
+
+---
+
+### ✅ 完成後請檢查
+
+* 畫面有沒有比原本更整齊
+* 文字有沒有更清楚
+* 表格有沒有更容易閱讀
+* CSS 是否真的只有改外觀，沒有改 HTML
+
+---
+
+👉 這一段的重點不是亂加效果，而是練習：
+
+**先選到 HTML，再一步一步改它的樣子。**
