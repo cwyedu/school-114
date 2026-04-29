@@ -43,6 +43,8 @@ import Collapsible from '/src/components/Collapsible.astro';
 僅輸出完整的單一 HTML 檔案程式碼，無需任何解釋或額外文字。
 ```
 
+另一種玩法：
+
 ```
 與上一個程式相反，現在換電腦展示猜使用者設定的數字，用binary search的方法
 ```
@@ -80,6 +82,7 @@ import Collapsible from '/src/components/Collapsible.astro';
 </Collapsible>
 
 <Collapsible title="不同進制數數">
+
 ```
 角色：
 扮演一位精通純 JavaScript、純 CSS（包含 CSS 3D 變換）以及語義化 HTML 的資深前端動畫工程師。你的任務是開發一個完整、獨立、單檔案的 HTML 頁面，必須滿足所有指定要求，且不能使用任何外部框架或函式庫。
@@ -119,6 +122,7 @@ import Collapsible from '/src/components/Collapsible.astro';
 並包含清楚註釋，說明 JavaScript 的關鍵邏輯（計數器狀態管理、進制轉換與格式化、正反向動畫控制）以及 CSS 3D 設定。
 
 ```
+
 </Collapsible>
 
 ---
@@ -134,10 +138,10 @@ import Collapsible from '/src/components/Collapsible.astro';
 1. 登入 GitHub
 2. 點擊右上角「+」→ **New repository**
 3. 設定：
+   - Repository name：例如 `my-first-website`
+   - 選擇 **Public**
+   - 勾選 **Add a README file（可選）**
 
-   * Repository name：例如 `my-first-website`
-   * 選擇 **Public**
-   * 勾選 **Add a README file（可選）**
 4. 點擊 **Create repository**
 
 ---
@@ -148,8 +152,8 @@ import Collapsible from '/src/components/Collapsible.astro';
 2. 點擊 **Add file → Create new file**
 3. 在檔名輸入：`index.html`
 4. 在下方編輯區，直接貼上 AI 產生的完整網頁程式碼
+   - 如果內容包含 `<style>` 或 `<script>`，**不用另外建立檔案**
 
-   * 如果內容包含 `<style>` 或 `<script>`，**不用另外建立檔案**
 5. 點擊 **Commit changes**
 
 ---
@@ -159,10 +163,10 @@ import Collapsible from '/src/components/Collapsible.astro';
 1. 在 repository 中點擊 **Settings**
 2. 左側選單找到 **Pages**
 3. 在 "Build and deployment" 區塊設定：
+   - Source：選擇 **Deploy from a branch**
+   - Branch：選擇 **main**（或 master）
+   - Folder：選擇 **/ (root)**
 
-   * Source：選擇 **Deploy from a branch**
-   * Branch：選擇 **main**（或 master）
-   * Folder：選擇 **/ (root)**
 4. 點擊 **Save**
 
 ---
@@ -171,11 +175,7 @@ import Collapsible from '/src/components/Collapsible.astro';
 
 等待約 10～60 秒後，你會看到一個網址，例如：
 
-```
-
-https://你的帳號.github.io/my-first-website/
-
-```
+`https://你的帳號.github.io/my-first-website/`
 
 點開即可看到你的網站！
 
@@ -189,30 +189,17 @@ GitHub Pages 會自動尋找目錄下的檔案，預設是： `index.html`
 
 例如：
 
-```
-
-https://你的帳號.github.io/my-first-website/
-
-```
+`https://你的帳號.github.io/my-first-website/`
 
 等同於：
 
-```
-
-https://你的帳號.github.io/my-first-website/index.html
-
-```
+`https://你的帳號.github.io/my-first-website/index.html`
 
 如果有其他 HTML 檔案例如： `about.html` 網址要這樣寫：
 
-```
-
-https://你的帳號.github.io/my-first-website/about.html
-
-```
+`https://你的帳號.github.io/my-first-website/about.html`
 
 總結：
 
-* 每個資料夾都會找 `index.html`
-* 其他檔案要自己連或自己打網址
-```
+- 每個資料夾都會找 `index.html`
+- 其他檔案要自己連或自己打網址
