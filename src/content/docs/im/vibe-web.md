@@ -73,9 +73,10 @@ GitHub Desktop 是一個圖形化版本控制工具，可以讓你：
 
 1. 使用 Antigravity 建立上述檔案架構，產生基本測試網頁
 2. [GitHub Desktop 操作（第一次上傳／下載與上傳）](/digital-applications/web-design-01#上傳-github使用-github-desktop)
-3. lab2：照相亭
-4. lab1：猜歌遊戲
-5. lab3：自行發想的遊戲
+3. lab2：[照相亭](https://cwyedu.github.io/imweb/lab2/)
+4. lab1：[猜歌遊戲](https://cwyedu.github.io/imweb/lab1/)
+5. lab3：[自行發想的遊戲](https://cwyedu.github.io/imweb/lab3/)
+6. lab4：[互動歡迎看板](https://cwyedu.github.io/imweb/lab4/)
 
 ---
 
@@ -83,4 +84,4 @@ GitHub Desktop 是一個圖形化版本控制工具，可以讓你：
 
 1. 先 **clone** 自己的專案：[使用 GitHub Desktop 下載後再上傳](http://localhost:4321/digital-applications/web-design-01#%E4%B8%89%E4%B8%8B%E6%AC%A1%E4%B8%8A%E8%AA%B2%E6%B5%81%E7%A8%8B%E4%B8%8B%E8%BC%89%E5%BE%8C%E5%86%8D%E4%B8%8A%E5%82%B3)
 2. 下載、安裝 Antigravity：記得安裝擴充 **chinese**、**live**
-3. 祝好運，自己開始下指示，做成如：[Lab 5: 照相亭](https://cwyedu.github.io/114-bs-web/lab5/index.html)
+3. 祝好運，自己開始下指示，做成如：[Lab2: 照相亭](https://cwyedu.github.io/imweb/lab2/index.html)
