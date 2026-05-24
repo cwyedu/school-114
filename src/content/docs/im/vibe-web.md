@@ -56,6 +56,10 @@ Google Antigravity 是一個線上開發環境，可以讓你：
 * 快速查看成果
 * 方便進行修改與測試
 
+:::danger
+Antigravity 已改版，如果要用有編輯檔案功能的，需下載 [Google Antigravity - Antigravity IDE](https://antigravity.google/product/antigravity-ide)
+:::
+
 ### GitHub Desktop
 
 GitHub Desktop 是一個圖形化版本控制工具，可以讓你：
@@ -77,6 +81,7 @@ GitHub Desktop 是一個圖形化版本控制工具，可以讓你：
 4. lab1：[猜歌遊戲](https://cwyedu.github.io/imweb/lab1/)
 5. lab3：[自行發想的遊戲](https://cwyedu.github.io/imweb/lab3/)
 6. lab4：[互動歡迎看板](https://cwyedu.github.io/imweb/lab4/)
+7. lab5：[二林工商小達人](https://cwyedu.github.io/imweb/lab5/)
 
 ---
 
@@ -109,4 +114,4 @@ GitHub Desktop 是一個圖形化版本控制工具，可以讓你：
 
 ### lab5：互動測驗
 
-到國中做升學宣導，做一個簡單的問答[闖關遊戲](/im/vibe-web-lab5)。
+到國中做升學宣導，做一個簡單的問答闖關遊戲
