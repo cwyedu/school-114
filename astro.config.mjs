@@ -72,7 +72,8 @@ export default defineConfig({
 						{ label: '均質化', link: '/misc/gamebit/gamebit' },
 						{ label: '自己錄首歌', link: '/misc/recording' },
 						{ label: '用 VS Code 寫網頁', link: '/misc/vscode-web' },
-						{ label: '114寒假重補修', link: '/misc/retake114' },
+						{ label: '114寒假重補修', link: '/misc/retake114-winter' },
+						{ label: '114暑假重補修', link: '/misc/retake114-summer' },
 					],
 
 				},
